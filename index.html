@@ -23,7 +23,7 @@
             href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
             rel="stylesheet">
     </head>
-    <body>
+    <body class="body">
         <header
             class="flex justify-between items-center bg-cyan-100 p-4 fixed top-0 left-0 w-full  shadow z-50">
             <h2 class="text-2xl font-semibold flex items-center">
@@ -62,7 +62,7 @@
                 class="flex justify-center flex-wrap items-center gap-5 mt-10 mb-10">
             </div>
         </section>
-
+        <!-- vocabulary container and default card -->
         <section id="vocabulary-container"
             class="grid grid-cols-3 gap-5 bg-gray-100 p-10">
             <div
@@ -94,9 +94,41 @@
         <!-- modal section -->
 
         <section>
-            <div id="vocabulary-modal" 
-            class="hidden fixed inset-0 bg-black/50 flex justify-center items-center z-50">
+            <div id="vocabulary-modal"
+                class="hidden fixed inset-0 bg-black/50 flex justify-center items-center z-50">
 
+            </div>
+        </section>
+
+        <!-- question section -->
+        <section class="my-32 ">
+            <h1 class="text-3xl font-semibold text-center mb-20"><span
+                    class="text-cyan-600">Frequently</span> Asked Questions</h1>
+            <div
+                class="collapse collapse-arrow bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-2" checked="checked" />
+                <div class="collapse-title font-semibold">How do I create an
+                    account?</div>
+                <div class="collapse-content text-sm">Click the "Sign Up" button
+                    in the top right corner and follow the registration
+                    process.</div>
+            </div>
+            <div
+                class="collapse collapse-arrow bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title font-semibold">I forgot my password.
+                    What should I do?</div>
+                <div class="collapse-content text-sm">Click on "Forgot Password"
+                    on the login page and follow the instructions sent to your
+                    email.</div>
+            </div>
+            <div
+                class="collapse collapse-arrow bg-base-100 border border-base-300">
+                <input type="radio" name="my-accordion-2" />
+                <div class="collapse-title font-semibold">How do I update my
+                    profile information?</div>
+                <div class="collapse-content text-sm">Go to "My Account"
+                    settings and select "Edit Profile" to make changes.</div>
             </div>
         </section>
 
